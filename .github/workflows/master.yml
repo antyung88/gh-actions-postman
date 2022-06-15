@@ -26,6 +26,7 @@ jobs:
         run: mkdir -p testResults
 
       # Run the POSTMAN collection
+      - uses: actions/checkout@v2
       - name: Run POSTMAN collection
         run: |
           newman run collection.json -e environment.json
