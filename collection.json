@@ -9,8 +9,17 @@
 		{
 			"name": "New Request",
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{server}}",
+					"host": [
+						"{{server}}"
+					]
+				}
 			},
 			"response": []
 		}
