@@ -29,7 +29,7 @@ jobs:
       - name: Run POSTMAN collection
         run: |
           newman run ./collection.json -e ./environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme  > testResults/report.html
-        allow_failure: true
+        continue-on-error: true
 
       # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
