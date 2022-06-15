@@ -21,14 +21,11 @@ jobs:
           npm install -g newman
           npm install -g newman-reporter-htmlextra
 
-      # Make directory to upload the test results
-      - name: Make Directory for results
-        run: mkdir -p testResults
-
       # Run the POSTMAN collection
       - uses: actions/checkout@v2
       - name: Run POSTMAN collection
         run: |
+          mkdir -p testResults
           newman run collection.json -e environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme > testResults/runreport1.html
         continue-on-error: true
 
