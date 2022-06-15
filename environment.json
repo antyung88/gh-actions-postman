@@ -4,7 +4,7 @@
 	"values": [
 		{
 			"key": "server",
-			"value": "google.com",
+			"value": "https://google.com",
 			"type": "default",
 			"enabled": true
 		}
