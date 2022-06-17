@@ -1,4 +1,4 @@
-# gh-actions-postman
+# gh-actions-postman [![Postman Test](https://github.com/antyung88/gh-actions-postman/actions/workflows/master.yml/badge.svg)](https://github.com/antyung88/gh-actions-postman/actions/workflows/master.yml)
 
 Postman tests in Github Actions pipeline & Generate Reports in HTML as Artifacts
 
